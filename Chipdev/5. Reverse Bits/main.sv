@@ -34,4 +34,7 @@ always_comb begin
     dout[i] = din[DATA_WIDTH - 1 - i];
   end
 end
+
+//alternative solution
+//assign dout = {<< {din}};
 endmodule
