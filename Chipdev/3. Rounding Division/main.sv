@@ -1,7 +1,12 @@
 /*
 Prompt
 
-Divide an input number by a power of two and round the result to the nearest integer. The power of two is calculated using 2DIV_LOG2 where DIV_LOG2 is a module parameter. Remainders of 0.5 or greater should be rounded up to the nearest integer. If the output were to overflow, then the result should be saturated instead.
+Divide an input number by a power of two and round the result to the nearest 
+integer. The power of two is calculated using 2DIV_LOG2 where DIV_LOG2 is a 
+module parameter. Remainders of 0.5 or greater should be rounded up to the 
+nearest integer. If the output were to overflow, then the result should be 
+saturated instead.
+
 Input and Output Signals
 
     din - Input number
@@ -30,7 +35,9 @@ dout = din⁄2DIV_LOG2
 = 3.75
 = 3 (rounded with saturation)
 
-Note that the purely mathematical approach would have rounded 3.75 up to 4, but since the output is only two bits wide in our example, the output result is saturated to 3 (b11) instead.
+Note that the purely mathematical approach would have rounded 3.75 up to 4, but
+ since the output is only two bits wide in our example, the output result is 
+ saturated to 3 (b11) instead.
 */
 
 
